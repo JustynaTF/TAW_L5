@@ -1,0 +1,4 @@
+Aplikacja wydrukowała komunikat "new connection" w konsoli za pomocą zdarzenia ("event") "connection". 
+Na obiekcie utworzonego wcześniej serwera, wywołujemy funkcję "on()", która wraz z każdym nawiązaniem
+nowego połączenia wywołuje funkcję zwrotną przyjmującą argument "socket"(połączenie między klientem a serwerem)
+i zawierającą "console.log()"(które wypisuje "new connection").
