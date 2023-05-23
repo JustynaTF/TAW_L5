@@ -10,6 +10,11 @@ import { BlogItemTextComponent } from './components/blog-item-text/blog-item-tex
 import { BlogItemImageComponent } from './components/blog-item-image/blog-item-image.component';
 import { BlogItemDetailsComponent } from './components/blog-item-details/blog-item-details.component';
 import { SummaryPipe } from './pipes/summary.pipe';
+import { SearchBarComponent } from './shared/search-bar/search-bar.component';
+import {FormsModule} from "@angular/forms";
+import { BlogHomeComponent } from './components/blog-home/blog-home.component';
+import { FilterTextPipe } from './pipes/filter-text.pipe';
+import { TextFormatDirective } from './directives/text-format.directive';
 
 @NgModule({
   declarations: [
@@ -20,12 +25,16 @@ import { SummaryPipe } from './pipes/summary.pipe';
     BlogItemImageComponent,
     BlogItemDetailsComponent,
     SummaryPipe,
-
+    SearchBarComponent,
+    BlogHomeComponent,
+    FilterTextPipe,
+    TextFormatDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     DataService
